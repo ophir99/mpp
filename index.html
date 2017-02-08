@@ -1,0 +1,56 @@
+<html ng-app="napp">
+<head>
+    <title>DataNatives</title>
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ext.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://use.fontawesome.com/6b5405a82f.js"></script>
+
+
+   
+</head>
+<body>
+    <nav>
+    <div class="nav-wrapper white">
+      <a href="#/" class="brand-logo center grey-text lighten-5">
+      	datanatives
+      </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse grey-text lighten-5 show-on-large"><i class="material-icons">menu</i></a>
+      
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#/schedule"><i class="fa fa-calendar-o" aria-hidden="true"></i>
+			Schedule</a>
+		</li>
+        <li><a href="#/speakers"><i class="fa fa-black-tie" aria-hidden="true"></i>
+			Speakers</a>
+		</li>
+        <li><a href="#/venue">
+        	<i class="fa fa-map-marker" aria-hidden="true"></i>
+        	Venue</a>
+        	
+        </li>
+        <li><a href="#/favourites">
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        Favourites</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" ng-view>
+  	<p class="flow-text">
+  		
+  	</p>
+  </div>
+</body>
+
+<script src="js/cust.js"></script>
+<script src="js/routes/routes.js"></script>
+</html>
